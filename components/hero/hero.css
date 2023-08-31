@@ -1,3 +1,6 @@
+body {
+  background: #0f103f;
+}
 .hero {
   background: #0f103f;
 }
@@ -149,4 +152,61 @@
   border-radius: 30px;
   background: linear-gradient(169deg, #c961de 0%, #2954a3 100%);
   box-shadow: 0px 10px 20px 0px rgba(8, 12, 33, 0.15);
+}
+.aboutMe {
+  display: flex;
+  background: #0f103f;
+  padding: 0px 209.015px 0px 209px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding-top: 200px;
+}
+.aboutMeCircle {
+  display: flex;
+  width: 630px;
+  height: 630px;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 350px; */
+  background: linear-gradient(144deg, #c961de 0%, #2954a3 100%);
+}
+.confident_ {
+  width: 900px;
+  height: 700px;
+  flex-shrink: 0;
+}
+.aboutMeSpan {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 26px */
+}
+.my_name_is {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 17.092px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 22.219px */
+}
+.read_more {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 17.092px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.illustration {
+  position: absolute;
+  top: 250vh;
+  left: 50vw;
+}
+.big_small_circle {
+  position: absolute;
+  top: 230vh;
+  /* left: 0; */
 }

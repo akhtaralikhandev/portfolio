@@ -69,6 +69,37 @@ const Hero = () => {
 
                 </div>
             </div>
+            <div className="aboutMe">
+                <div className="aboutMeWrapper">
+                    <div className="aboutMeCircle relative rounded-full overflow-hidden">
+                        <div className='absolute  top-0 left-0'>
+                            <img className='confident_' src="/images/hero/confident.png" alt="" />
+                        </div>
+                        <div className="aboutMeCircleWords flex flex-col gap-2  md:pl-80 md:pr-2">
+                            <span className="aboutMeSpan">
+                                About me
+                            </span>
+                            <div className='flex flex-col my_name_is'>
+                                <span>My name is Sourasith Phomhome.</span>
+                                <span>I'm a UI Designer and a instrutor</span>
+                                <span> based in Montreal. I'm curently</span>
+                                <span>working with Design+Code. I'm</span>
+                                <span>passionate about creating digital</span>
+                                <span>experiences and teaching design.</span>
+                                <span>My goal is to help beginners to</span>
+                                <span> grow their skills <span className='read_more cursor-pointer'>...read more</span></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="illustration  ">
+                        <img src="/images/about_me/illustration.png" alt="" />
+                    </div>
+                    <div className="big_small_circle absolute left-48">
+                        <img src="/images/about_me/BG Small Circle.png" alt="" />
+                    </div>
+                </div>
+            </div>
         </>
 
     )
