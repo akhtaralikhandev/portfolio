@@ -1,5 +1,6 @@
 "use client"
-import { useEffect, useState, useRef } from 'react';
+
+import Slider from '../../components/slider/slider'
 import './hero.css'
 const Hero = () => {
 
@@ -81,9 +82,9 @@ const Hero = () => {
                             </span>
                             <div className='flex flex-col my_name_is'>
                                 <span>My name is Sourasith Phomhome.</span>
-                                <span>I'm a UI Designer and a instrutor</span>
-                                <span> based in Montreal. I'm curently</span>
-                                <span>working with Design+Code. I'm</span>
+                                <span>{"I'm a UI Designer and a instrutor"}</span>
+                                <span>{" based in Montreal. I'm curently"}</span>
+                                <span>{"working with Design+Code. I'm</span"}</span>
                                 <span>passionate about creating digital</span>
                                 <span>experiences and teaching design.</span>
                                 <span>My goal is to help beginners to</span>
@@ -98,6 +99,15 @@ const Hero = () => {
                     <div className="big_small_circle absolute left-48">
                         <img src="/images/about_me/BG Small Circle.png" alt="" />
                     </div>
+                </div>
+            </div>
+            <div className="my_recent_work relative">
+                <div className="my_recent_work_wrapper  flex flex-col items-center justify-center">
+                    <span className='my_recent_work_span'>My recent work</span>
+                    <Slider />
+                    <img className='absolute small_big_circle' src="/images/works/BG Small Circle.png" alt="" />
+                    <img className='absolute small_big_circle1' src="/images/works/BG Small Circle.png" alt="" />
+
                 </div>
             </div>
         </>

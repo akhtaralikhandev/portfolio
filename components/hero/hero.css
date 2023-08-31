@@ -210,3 +210,28 @@ body {
   top: 230vh;
   /* left: 0; */
 }
+.my_recent_work_span {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 39px */
+}
+.my_recent_work_wrapper {
+  padding-top: 80vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+.small_big_circle {
+  stroke-width: 2.97px;
+  stroke: #fff;
+  mix-blend-mode: overlay;
+  width: 1050px;
+}
+.small_big_circle1 {
+  stroke-width: 2.97px;
+  stroke: #fff;
+  mix-blend-mode: overlay;
+  width: 500px;
+}
