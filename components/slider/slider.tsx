@@ -27,7 +27,7 @@ export default function App() {
                     slideShadows: true,
                 }}
                 autoplay={{
-                    delay: 2500,
+                    delay: 4500,
                     disableOnInteraction: false,
                 }}
                 pagination={true}
