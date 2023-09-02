@@ -85,13 +85,16 @@ body {
   height: 600px;
   flex-shrink: 0;
   background-image: url("/images/sidebar/Background.png");
+  z-index: 1;
 }
 
 .sidebar_wrapper::before {
+  z-index: 0;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(

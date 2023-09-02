@@ -1,23 +1,51 @@
 "use client"
-
+import { useRef } from 'react'
 import Slider from '../../components/slider/slider'
 import './hero.css'
 const Hero = () => {
+    const home = useRef<HTMLInputElement>(null);
+    const about = useRef<HTMLInputElement>(null)
+    const work = useRef<HTMLInputElement>(null)
+    const contact = useRef<HTMLInputElement>(null)
+    const footer = useRef<HTMLInputElement>(null)
+    const handleClick = () => {
+        if (work.current !== null) {
+            work.current.scrollIntoView({ behavior: 'smooth' });
+        }
 
+    }
+    const handleClick2 = () => {
+        if (home.current !== null) {
+            home.current.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    }
+    const handleClick3 = () => {
+        if (about.current !== null) {
+            about.current.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    }
+    const handleClick4 = () => {
+        if (contact.current !== null) {
+            contact.current.scrollIntoView({ behavior: 'smooth' });
+        }
+
+    }
     return (
         <>
             {/* hero section */}
-            <div className="hero relative">
+            <div ref={home} className="hero relative">
                 <div className="heroWrapper relative">
                     {/* NAVBAR */}
                     <div className="navbar md:pl-60 md:pr-60 md:p-8">
                         <div className="navbar_wrapper">
                             <ul className="navbar_list z-10 flex items-center justify-between">
-                                <li>Home</li>
-                                <li>About me</li>
-                                <li>  <img src="/images/navbar/Logo name.png" alt="" /></li>
-                                <li>Work</li>
-                                <li>Contact</li>
+                                <li onClick={() => handleClick2()}>Home</li>
+                                <li onClick={() => handleClick3()}>About me</li>
+                                <li onClick={() => handleClick2()}>  <img src="/images/navbar/Logo name.png" alt="" /></li>
+                                <li onClick={() => handleClick()}>Work</li>
+                                <li onClick={() => handleClick4()}>Contact</li>
                             </ul>
                         </div>
                     </div>
@@ -45,13 +73,15 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="sidebar z-40  ">
+                    <div className="sidebar   ">
                         <div className="sidebar_wrapper fixed top-24">
-                            <ul className='flex z-20 cursor-pointer flex-col items-center  h-full justify-around pt-36 pb-10'>
-                                <li className='cursor-pointer'>
+                            <ul className='flex   cursor-pointer flex-col items-center  h-full justify-around pt-36 pb-10'>
+                                <li onClick={() => {
+                                    console.log("clicked")
+                                }} className='cursor-pointer'>
                                     <img className=' cursor-pointer' src="/images/sidebar/home.png" alt="" />
                                 </li>
-                                <li className=' cursor-pointer'>
+                                <li onClick={() => handleClick3()} className=' cursor-pointer'>
                                     <img src="/images/sidebar/person_outline.png" alt="" />
                                 </li>
                                 <li className=' cursor-pointer'>
@@ -69,7 +99,7 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div className="aboutMe">
+            <div ref={about} className="aboutMe">
                 <div className="aboutMeWrapper">
                     <div className="aboutMeCircle relative rounded-full overflow-hidden">
                         <div className='absolute  top-0 left-0'>
@@ -100,7 +130,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="my_recent_work relative">
+            <div ref={work} className="my_recent_work relative">
                 <div className="my_recent_work_wrapper  flex flex-col items-center justify-center">
                     <span className='my_recent_work_span'>My recent work</span>
                     <Slider />
@@ -109,7 +139,7 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div className="contact_me">
+            <div ref={contact} className="contact_me">
                 <div className="contact_me_wrapper flex gap-4 md:pl-28 md:pr-28 p-12">
                     <div className="leftContact flex-1 flex flex-col gap-14">
                         <div className='flex flex-col gap-6'>
