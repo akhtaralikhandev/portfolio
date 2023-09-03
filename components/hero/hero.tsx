@@ -3,8 +3,8 @@ import { useRef, useState } from 'react'
 import Slider from '../../components/slider/slider'
 import './hero.css'
 const Hero = () => {
-    const [openSideBar, setOpenSideBar] = useState(80)
-    const [navHeight, setNavHeight] = useState('h-48')
+    const [openSideBar, setOpenSideBar] = useState(10)
+    const [navHeight, setNavHeight] = useState('h-0')
     const home = useRef<HTMLInputElement>(null);
     const about = useRef<HTMLInputElement>(null)
     const work = useRef<HTMLInputElement>(null)
@@ -80,15 +80,15 @@ const Hero = () => {
                                 <img className='absolute top-60 ellipse-2' src="/images/hero/Ellipse 329.png" alt="" />
                                 <img className='absolute  top-80 ellipse-3' src="/images/hero/Ellipse 328.png" alt="" />
                             </div>
-                            <div className=" z-30 flex items-center flex-col gap-14 justify-start md:pl-48 md:pt-28 ">
-                                <div className="creativeWrapper lg:text-6xl md:text-4xl text-2xl creative flex flex-col z-30">
+                            <div className=" z-20 flex items-center flex-col gap-14 justify-start md:pl-48 md:pt-28 ">
+                                <div className="creativeWrapper lg:text-6xl md:text-4xl text-xl creative flex flex-col z-30">
                                     <span>Creative UI & Full Stack</span>
                                     <span>developer Akhtar Ali khan</span>
                                     <span>Based in Pakistan</span>
                                 </div>
                                 <div className='hero_section_button z-20 flex items-center gap-8'>
-                                    <button className='hire_me'>Hire me</button>
-                                    <button className='download_cv'>Download CV</button>
+                                    <button className='hire_me md:pl-16 pl-5 pr-5 p-2 md:p-3 md:pr-16'>Hire me</button>
+                                    <button className='download_cv md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10'>Download CV</button>
                                 </div>
                                 <div className="solarHero absolute top-14 right-0">
                                     <img src="/images/hero/Group 1190.png" alt="" />
@@ -96,9 +96,9 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="sidebar overflow-hidden  ">
+                    <div className="sidebar  overflow-hidden  ">
 
-                        <div style={{ width: openSideBar }} className={`sidebar_wrapper   z-20  fixed top-24`}>
+                        <div style={{ width: openSideBar }} className={`sidebar_wrapper   4-20  fixed top-24`}>
                             <ul className='flex   cursor-pointer flex-col items-center  h-full justify-around pt-36 pb-10'>
                                 <li onClick={() => {
                                     console.log("hallo ")
@@ -130,17 +130,17 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div ref={about} className="aboutMe">
+            <div ref={about} className="aboutMe md:mt-48">
                 <div className="aboutMeWrapper">
                     <div className="aboutMeCircle relative rounded-full overflow-hidden">
                         <div className='absolute  top-0 left-0'>
                             <img className='confident_' src="/images/hero/confident.png" alt="" />
                         </div>
                         <div className="aboutMeCircleWords flex flex-col gap-2  md:pl-80 md:pr-2">
-                            <span className="aboutMeSpan">
+                            <span className="aboutMeSpan md:text-xl text-lg">
                                 About me
                             </span>
-                            <div className='flex flex-col my_name_is'>
+                            <div className='flex flex-col my_name_is md:text-lg text-sm'>
                                 <span>My name is Sourasith Phomhome.</span>
                                 <span>{"I'm a UI Designer and a instrutor"}</span>
                                 <span>{" based in Montreal. I'm curently"}</span>
@@ -171,7 +171,7 @@ const Hero = () => {
                 </div>
             </div>
             <div ref={contact} className="contact_me">
-                <div className="contact_me_wrapper flex gap-4 md:pl-28 md:pr-28 p-12">
+                <div className="contact_me_wrapper md:flex-row flex-col flex gap-4 md:pl-28 md:pr-28 md:p-12">
                     <div className="leftContact flex-1 flex flex-col gap-14">
                         <div className='flex flex-col gap-6'>
                             <span className='get_in_touch_span'>Get in touch</span>

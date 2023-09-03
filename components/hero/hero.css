@@ -134,8 +134,8 @@ body {
   font-weight: 400;
   line-height: 143.203%; /* 24.345px */
   display: flex;
-  width: 200px;
-  height: 50px;
+  /* width: 200px;
+  height: 50px; */
   justify-content: center;
   align-items: center;
   border-radius: 30px;
@@ -152,9 +152,7 @@ body {
   font-weight: 400;
   line-height: 143.203%; /* 24.345px */
   display: flex;
-  width: 200px;
-  height: 50px;
-  padding: 10px;
+
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -165,11 +163,10 @@ body {
 .aboutMe {
   display: flex;
   background: #0f103f;
-  padding: 0px 209.015px 0px 209px;
+  /* padding: 0px 209.015px 0px 209px; */
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  padding-top: 200px;
 }
 .aboutMeCircle {
   display: flex;
@@ -180,6 +177,7 @@ body {
   /* border-radius: 350px; */
   background: linear-gradient(144deg, #c961de 0%, #2954a3 100%);
 }
+
 .confident_ {
   width: 900px;
   height: 700px;
@@ -188,7 +186,7 @@ body {
 .aboutMeSpan {
   color: #fff;
   font-family: Poppins;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 26px */
@@ -196,7 +194,7 @@ body {
 .my_name_is {
   color: #fff;
   font-family: Poppins;
-  font-size: 17.092px;
+  /* font-size: 17.092px; */
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 22.219px */
@@ -369,4 +367,31 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 143.203%; /* 21.48px */
+}
+@media screen and (max-width: 800px) {
+  .aboutMeCircle {
+    height: 300px;
+    width: 300px;
+  }
+  .confident_ {
+    width: 100px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+  .illustration {
+    position: absolute;
+    top: 200vh;
+    left: 50vw;
+  }
+  .big_small_circle {
+    position: absolute;
+    top: 170vh;
+    left: 10px;
+    /* left: 0; */
+  }
+  .contact_me {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 200px;
+  }
 }
