@@ -98,7 +98,7 @@ const Hero = () => {
                     </div>
                     <div className="sidebar  overflow-hidden  ">
 
-                        <div style={{ width: openSideBar }} className={`sidebar_wrapper   4-20  fixed top-24`}>
+                        <div style={{ width: openSideBar }} className={`sidebar_wrapper    -z-50  fixed top-24`}>
                             <ul className='flex   cursor-pointer flex-col items-center  h-full justify-around pt-36 pb-10'>
                                 <li onClick={() => {
                                     console.log("hallo ")
@@ -136,7 +136,7 @@ const Hero = () => {
                         <div className='absolute  top-0 left-0'>
                             <img className='confident_' src="/images/hero/confident.png" alt="" />
                         </div>
-                        <div className="aboutMeCircleWords flex flex-col gap-2  md:pl-80 md:pr-2">
+                        <div className="aboutMeCircleWords flex pl-8 flex-col gap-2  md:pl-80 md:pr-2">
                             <span className="aboutMeSpan md:text-xl text-lg">
                                 About me
                             </span>
@@ -144,7 +144,7 @@ const Hero = () => {
                                 <span>My name is Sourasith Phomhome.</span>
                                 <span>{"I'm a UI Designer and a instrutor"}</span>
                                 <span>{" based in Montreal. I'm curently"}</span>
-                                <span>{"working with Design+Code. I'm</span"}</span>
+                                <span>{"working with Design+Code. I'm"}</span>
                                 <span>passionate about creating digital</span>
                                 <span>experiences and teaching design.</span>
                                 <span>My goal is to help beginners to</span>
@@ -173,7 +173,7 @@ const Hero = () => {
             <div ref={contact} className="contact_me">
                 <div className="contact_me_wrapper md:flex-row flex-col flex gap-4 md:pl-28 md:pr-28 md:p-12">
                     <div className="leftContact flex-1 flex flex-col gap-14 md:p-0 p-8">
-                        <div className='flex flex-col gap-6'>
+                        <div className='flex flex-col gap-6 '>
                             <span className='get_in_touch_span'>Get in touch</span>
                             <div className='approachable flex flex-col'>
                                 <span>{"I'm very approachable and"}</span>
