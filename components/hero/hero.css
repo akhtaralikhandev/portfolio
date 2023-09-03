@@ -6,6 +6,7 @@ body {
 }
 .navbar_list {
   color: #fff;
+  transition: 0.4s ease;
   font-family: Poppins;
   font-size: 17px;
   font-style: normal;
@@ -81,13 +82,14 @@ body {
 
 .sidebar_wrapper {
   /* position: relative; */
-  width: 80px;
+  /* width: 80px; */
   height: 600px;
   flex-shrink: 0;
   background-image: url("/images/sidebar/Background.png");
   z-index: 1;
+  transition: 0.3s ease;
 }
-
+/* 
 .sidebar_wrapper::before {
   z-index: 0;
   content: "";
@@ -107,14 +109,18 @@ body {
     transparent
   );
   opacity: 0.5; /* Adjust the opacity to your preference */
-}
+/* } */
 .heroSection {
   height: 800px;
+  transition: 0.4s ease;
+}
+.navbar_wrapper {
+  transition: 0.4s ease;
 }
 .creative {
   color: #fff;
   font-family: Poppins;
-  font-size: 60px;
+
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 78px */

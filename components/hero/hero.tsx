@@ -1,13 +1,22 @@
 "use client"
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import Slider from '../../components/slider/slider'
 import './hero.css'
 const Hero = () => {
+    const [openSideBar, setOpenSideBar] = useState(80)
+    const [navHeight, setNavHeight] = useState('h-48')
     const home = useRef<HTMLInputElement>(null);
     const about = useRef<HTMLInputElement>(null)
     const work = useRef<HTMLInputElement>(null)
     const contact = useRef<HTMLInputElement>(null)
     const footer = useRef<HTMLInputElement>(null)
+    const toggleNavbar = () => {
+        if (navHeight === "h-48") {
+            setNavHeight("h-0")
+        } else {
+            setNavHeight("h-48")
+        }
+    }
     const handleClick = () => {
         if (work.current !== null) {
             work.current.scrollIntoView({ behavior: 'smooth' });
@@ -32,18 +41,32 @@ const Hero = () => {
         }
 
     }
+    const toggleSidebar = () => {
+        if (openSideBar === 80) {
+            setOpenSideBar(10)
+        } else {
+            setOpenSideBar(80)
+        }
+
+    }
     return (
         <>
             {/* hero section */}
             <div ref={home} className="hero relative">
                 <div className="heroWrapper relative">
                     {/* NAVBAR */}
-                    <div className="navbar md:pl-60 md:pr-60 md:p-8">
-                        <div className="navbar_wrapper">
-                            <ul className="navbar_list z-10 flex items-center justify-between">
+                    <div className="navbar   lg:pl-60 lg:pr-60 pl-8 pr-8 p-4 lg:p-8">
+                        <div className="navbar_wrapper flex  items-start justify-between">
+                            <div className='lg:hidden block'>
+                                <img src="/images/navbar/Logo name.png" alt="" />
+                            </div>
+                            <span className='absolute lg:hidden block right-8 top-8 text-white text-3xl cursor-pointer'>
+                                {navHeight === "h-48" ? <i onClick={() => toggleNavbar()} className="fa fa-close" aria-hidden="true"></i> : <i onClick={() => toggleNavbar()} className="fa fa-bars" aria-hidden="true"></i>}
+                            </span>
+                            <ul className={`navbar_list w-full overflow-hidden lg:h-12 ${navHeight} lg:mt-0 mt-14 lg:flex  flex lg:flex-row  gap-4 flex-col items-end lg:items-center lg:justify-between`}>
                                 <li onClick={() => handleClick2()}>Home</li>
                                 <li onClick={() => handleClick3()}>About me</li>
-                                <li onClick={() => handleClick2()}>  <img src="/images/navbar/Logo name.png" alt="" /></li>
+                                <li className='lg:block hidden' onClick={() => handleClick2()}>  <img src="/images/navbar/Logo name.png" alt="" /></li>
                                 <li onClick={() => handleClick()}>Work</li>
                                 <li onClick={() => handleClick4()}>Contact</li>
                             </ul>
@@ -52,13 +75,13 @@ const Hero = () => {
                     <div className="heroSection  ">
                         <div className="heroSectionWrapper relative">
                             <div className="ellipseHero relative">
-                                <img className='firstPng' src="/images/hero/first.png" alt="" />
+                                <img className='firstPng lg:h-60 md:h-40 h-32 ' src="/images/hero/first.png" alt="" />
                                 {/* <img className='absolute  top-60 ' src="/images/hero/Ellipse 328.png" alt="" /> */}
                                 <img className='absolute top-60 ellipse-2' src="/images/hero/Ellipse 329.png" alt="" />
                                 <img className='absolute  top-80 ellipse-3' src="/images/hero/Ellipse 328.png" alt="" />
                             </div>
                             <div className=" z-30 flex items-center flex-col gap-14 justify-start md:pl-48 md:pt-28 ">
-                                <div className="creativeWrapper creative flex flex-col z-30">
+                                <div className="creativeWrapper lg:text-6xl md:text-4xl text-2xl creative flex flex-col z-30">
                                     <span>Creative UI & Full Stack</span>
                                     <span>developer Akhtar Ali khan</span>
                                     <span>Based in Pakistan</span>
@@ -73,9 +96,16 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="sidebar   ">
-                        <div className="sidebar_wrapper fixed top-24">
+                    <div className="sidebar overflow-hidden  ">
+
+                        <div style={{ width: openSideBar }} className={`sidebar_wrapper   z-20  fixed top-24`}>
                             <ul className='flex   cursor-pointer flex-col items-center  h-full justify-around pt-36 pb-10'>
+                                <li onClick={() => {
+                                    console.log("hallo ")
+                                    toggleSidebar()
+                                }} className='h-12  justify-center w-12 flex items-center rounded-full absolute top-0 -right-12 bg-white'>
+                                    <img className='h-8 ' src="/images/sidebar/sidebar.png" alt="" />
+                                </li>
                                 <li onClick={() => {
                                     console.log("clicked")
                                 }} className='cursor-pointer'>
@@ -95,6 +125,7 @@ const Hero = () => {
                                 </li>
                             </ul>
                         </div>
+
                     </div>
 
                 </div>
