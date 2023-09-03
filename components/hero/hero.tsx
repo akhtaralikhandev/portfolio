@@ -172,7 +172,7 @@ const Hero = () => {
             </div>
             <div ref={contact} className="contact_me">
                 <div className="contact_me_wrapper md:flex-row flex-col flex gap-4 md:pl-28 md:pr-28 md:p-12">
-                    <div className="leftContact flex-1 flex flex-col gap-14">
+                    <div className="leftContact flex-1 flex flex-col gap-14 md:p-0 p-8">
                         <div className='flex flex-col gap-6'>
                             <span className='get_in_touch_span'>Get in touch</span>
                             <div className='approachable flex flex-col'>
@@ -188,14 +188,14 @@ const Hero = () => {
                             <img src="/images/contact/Frame 3533.png" alt="" />
                         </div>
                     </div>
-                    <div className="rightContact relative flex-1">
-                        <form className='flex flex-col gap-4'>
+                    <div className="rightContact relative flex-1 md:p-0 p-8">
+                        <form className='flex flex-col gap-4 '>
                             <span className="send_me_a_message_span">Send me a message</span>
                             <input className='input outline-none' placeholder='Name' type="text" />
                             <input className='input outline-none' placeholder='Email Address' type="email" />
                             <input className='input outline-none' placeholder='Subject' type="text" />
                             <textarea className='textarea outline-none' placeholder='write message here'></textarea>
-                            <button className="button_input">Send message</button>
+                            <button className="button_input cursor-pointer">Send message</button>
                         </form>
                         <div className='absolute top-60'>
                             <img className='group_1199 ' src="/images/contact/Group 1199.png" alt="" />
@@ -205,23 +205,23 @@ const Hero = () => {
             </div>
             {/* footer */}
             <div className="footer  z-10  mt-40">
-                <div className="footerWrapper relative flex flex-col md:p-14 items-center md:gap-12 justify-center ">
-                    <img className='absolute  left-32  top-0 h-32' src="/images/footer/6.png" alt="" />
-                    <ul className='flex  md:pl-32 md:pr-32  items-center justify-between md:gap-24'>
-                        <li className='flex items-center gap-2'>
+                <div className="footerWrapper relative flex flex-col md:p-14 p-8 items-center md:gap-12 gap-6 justify-center ">
+                    <img className='absolute md:block hidden  left-32  top-0 h-32' src="/images/footer/6.png" alt="" />
+                    <ul className='flex  md:pl-32 md:pr-32 pl-0 pr-0 md:flex-nowrap flex-wrap  items-center justify-between md:gap-24 gap-4'>
+                        <li className='flex items-center gap-2 md:text-xl text-sm'>
                             <img src="/images/footer/home.png" alt="" /> Home
                         </li>
-                        <li className='flex items-center gap-2'>
+                        <li className='flex items-center gap-2 md:text-xl text-sm'>
                             <img src="/images/footer/person_outline.png" alt="" /> About me
                         </li>
-                        <li className='flex items-center gap-2'>
+                        <li className='flex items-center gap-2 md:text-xl text-sm'>
                             <img src="/images/footer/work.png" alt="" /> work.png
                         </li>
-                        <li className='flex items-center gap-2'>
+                        <li className='flex items-center gap-2 md:text-xl text-sm'>
                             <img src="/images/footer/Phone_fill.png" alt="" /> Contact
                         </li>
                     </ul>
-                    <ul className='flex  md:pl-32 md:pr-32  items-center justify-center md:gap-4'>
+                    <ul className='flex  md:pl-32 md:pr-32  items-center justify-center md:gap-4 gap-4'>
                         <li>
                             <img className='ul_li_social' src="/images/footer/Instagram.png" alt="" />
                         </li>
