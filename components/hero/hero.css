@@ -34,7 +34,7 @@ body {
     );
 }
 .heroSection {
-  background: #0f103f;
+  /* background: #0f103f; */
 }
 .ellipseHero img {
   position: absolute;
@@ -380,18 +380,25 @@ body {
   }
   .illustration {
     position: absolute;
-    top: 200vh;
+    top: 160vh;
     left: 50vw;
   }
   .big_small_circle {
     position: absolute;
-    top: 170vh;
+    top: 140vh;
     left: 10px;
     /* left: 0; */
   }
   .contact_me {
-    padding-left: 30px;
+    padding-left: 10px;
     padding-right: 30px;
-    padding-top: 200px;
+    padding-top: 10px;
+  }
+  .my_recent_work_wrapper {
+    padding-top: 60vh;
+  }
+  .heroSection {
+    height: 600px;
+    transition: 0.4s ease;
   }
 }

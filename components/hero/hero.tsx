@@ -72,7 +72,7 @@ const Hero = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="heroSection  ">
+                    <div className="heroSection   ">
                         <div className="heroSectionWrapper relative">
                             <div className="ellipseHero relative">
                                 <img className='firstPng lg:h-60 md:h-40 h-32 ' src="/images/hero/first.png" alt="" />
@@ -130,7 +130,7 @@ const Hero = () => {
 
                 </div>
             </div>
-            <div ref={about} className="aboutMe md:mt-48">
+            <div ref={about} className="aboutMe bg-white md:mt-48 mt-4">
                 <div className="aboutMeWrapper">
                     <div className="aboutMeCircle relative rounded-full overflow-hidden">
                         <div className='absolute  top-0 left-0'>
@@ -204,7 +204,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* footer */}
-            <div className="footer  z-10  mt-40">
+            <div className="footer  z-70  mt-40">
                 <div className="footerWrapper relative flex flex-col md:p-14 p-8 items-center md:gap-12 gap-6 justify-center ">
                     <img className='absolute md:block hidden  left-32  top-0 h-32' src="/images/footer/6.png" alt="" />
                     <ul className='flex  md:pl-32 md:pr-32 pl-0 pr-0 md:flex-nowrap flex-wrap  items-center justify-between md:gap-24 gap-4'>
