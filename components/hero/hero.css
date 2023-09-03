@@ -401,4 +401,7 @@ body {
     height: 600px;
     transition: 0.4s ease;
   }
+  .input {
+    width: 250px;
+  }
 }
