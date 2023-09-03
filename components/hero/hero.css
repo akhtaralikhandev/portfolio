@@ -404,4 +404,7 @@ body {
   .input {
     width: 250px;
   }
+  .textarea {
+    width: 250px;
+  }
 }
