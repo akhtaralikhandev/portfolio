@@ -223,7 +223,9 @@ const Hero = () => {
                     </ul>
                     <ul className='flex  md:pl-32 md:pr-32  items-center justify-center md:gap-4 gap-4'>
                         <li>
-                            <img className='ul_li_social' src="/images/footer/Instagram.png" alt="" />
+                            <a href="https://www.instagram.com/react_node_developer/" target='_blank'>
+                                <img className='ul_li_social' src="/images/footer/Instagram.png" alt="" />
+                            </a>
                         </li>
                         <li>
                             <img className='ul_li_social' src="/images/footer/Twitter.png" alt="" />
@@ -232,7 +234,8 @@ const Hero = () => {
                             <img className='ul_li_social' src="/images/footer/Linkedin.png" alt="" />
                         </li>
                         <li>
-                            <img className='ul_li_social' src="/images/footer/Facebook.png" alt="" />
+                            <a href="https://www.facebook.com/profile.php?id=61550939720046" target='_blank'>
+                                <img className='ul_li_social' src="/images/footer/Facebook.png" alt="" /></a>
                         </li>
                     </ul>
                     <div className="separator w-full pl-14 pr-14"></div>
