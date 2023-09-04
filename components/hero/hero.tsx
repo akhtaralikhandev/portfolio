@@ -80,14 +80,18 @@ const Hero = () => {
                                 <img className='absolute top-60 ellipse-2' src="/images/hero/Ellipse 329.png" alt="" />
                                 <img className='absolute  top-80 ellipse-3' src="/images/hero/Ellipse 328.png" alt="" />
                             </div>
-                            <div className=" z-20 flex items-center flex-col gap-14 justify-start md:pl-48 md:pt-28 ">
+                            <div className="  flex items-center flex-col gap-14 justify-start md:pl-48 md:pt-28 ">
                                 <div className="creativeWrapper lg:text-6xl md:text-4xl text-xl creative flex flex-col z-30">
                                     <span>Creative UI & Full Stack</span>
                                     <span>developer Akhtar Ali khan</span>
                                     <span>Based in Pakistan</span>
                                 </div>
                                 <div className='hero_section_button z-20 flex items-center gap-8'>
-                                    <button className='hire_me md:pl-16 pl-5 pr-5 p-2 md:p-3 md:pr-16'>Hire me</button>
+                                    <a href="https://www.fiverr.com/ptiinsafstudent/create-custom-web-apps-react-nextjs-nodejs-typescript" target='_blank'>
+
+                                        <button className='hire_me md:pl-16 pl-5 pr-5 p-2 md:p-3 md:pr-16'>
+                                            Hire me
+                                        </button></a>
                                     <button className='download_cv md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10'>Download CV</button>
                                 </div>
                                 <div className="solarHero absolute top-14 right-0">
@@ -98,7 +102,7 @@ const Hero = () => {
                     </div>
                     <div className="sidebar  overflow-hidden  ">
 
-                        <div style={{ width: openSideBar }} className={`sidebar_wrapper    -z-50  fixed top-24`}>
+                        <div style={{ width: openSideBar }} className={`sidebar_wrapper    z-50  fixed top-24`}>
                             <ul className='flex   cursor-pointer flex-col items-center  h-full justify-around pt-36 pb-10'>
                                 <li onClick={() => {
                                     console.log("hallo ")
