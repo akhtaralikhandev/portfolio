@@ -107,7 +107,7 @@ const Hero = () => {
                                 <li onClick={() => {
                                     console.log("hallo ")
                                     toggleSidebar()
-                                }} className='h-12  justify-center w-12 flex items-center rounded-full absolute top-0 -right-12 bg-white'>
+                                }} className='h-12  justify-center w-12 flex items-center rounded-full absolute -top-8 md:top-0 -right-12 bg-white'>
                                     <img className='h-8 ' src="/images/sidebar/sidebar.png" alt="" />
                                 </li>
                                 <li onClick={() => {
