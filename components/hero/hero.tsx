@@ -145,18 +145,18 @@ const Hero = () => {
             <div ref={about} className="aboutMe bg-white md:mt-48 mt-4">
                 <div className="aboutMeWrapper">
                     <div className="aboutMeCircle relative rounded-full overflow-hidden">
-                        <div className='absolute  top-0 left-0'>
-                            <img className='confident_' src="/images/hero/confident.png" alt="" />
+                        <div className='absolute md:block hidden left-0 top-32'>
+                            <img className='h-80 ' src="/images/about_me/about_me.png" alt="" />
                         </div>
                         <div className="aboutMeCircleWords flex pl-8 flex-col gap-2  md:pl-80 md:pr-2">
                             <span className="aboutMeSpan md:text-xl text-lg">
                                 About me
                             </span>
                             <div className='flex flex-col my_name_is md:text-lg text-sm'>
-                                <span>My name is Sourasith Phomhome.</span>
-                                <span>{"I'm a UI Designer and a instrutor"}</span>
-                                <span>{" based in Montreal. I'm curently"}</span>
-                                <span>{"working with Design+Code. I'm"}</span>
+                                <span>My name is Akhtar ali khan.</span>
+                                <span>{"I'm a web developer"}</span>
+                                <span>{" based in Pakistan. I'm curently"}</span>
+                                <span>{"working with Next.js. I'm"}</span>
                                 <span>passionate about creating digital</span>
                                 <span>experiences and teaching design.</span>
                                 <span>My goal is to help beginners to</span>
