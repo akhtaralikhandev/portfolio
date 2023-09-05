@@ -10,6 +10,14 @@ const Hero = () => {
     const work = useRef<HTMLInputElement>(null)
     const contact = useRef<HTMLInputElement>(null)
     const footer = useRef<HTMLInputElement>(null)
+    const downloadCV = () => {
+        // Construct the URL to the PDF file in the public folder.
+        const pdfURL = "https://drive.google.com/file/d/13pu3FK6yFx9szdWpaNM9638XrSI6m3pP/view";
+        const link = document.createElement('a');
+        link.href = pdfURL;
+        link.download = 'your-cv.pdf'; // Specify the desired file name for download.
+        link.click();
+    };
     const toggleNavbar = () => {
         if (navHeight === "h-48") {
             setNavHeight("h-0")
@@ -92,7 +100,7 @@ const Hero = () => {
                                         <button className='hire_me md:pl-16 pl-5 pr-5 p-2 md:p-3 md:pr-16'>
                                             Hire me
                                         </button></a>
-                                    <button className='download_cv md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10'>Download CV</button>
+                                    <button onClick={() => downloadCV()} className='download_cv md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10'>Download CV</button>
                                 </div>
                                 <div className="solarHero absolute top-14 right-0">
                                     <img src="/images/hero/Group 1190.png" alt="" />
