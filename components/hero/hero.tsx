@@ -15,7 +15,7 @@ const Hero = () => {
         const pdfURL = "https://drive.google.com/file/d/13pu3FK6yFx9szdWpaNM9638XrSI6m3pP/view";
         const link = document.createElement('a');
         link.href = pdfURL;
-        link.download = 'your-cv.pdf'; // Specify the desired file name for download.
+        // link.download = 'your-cv.pdf'; // Specify the desired file name for download.
         link.click();
     };
     const toggleNavbar = () => {
