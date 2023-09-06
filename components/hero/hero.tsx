@@ -1,10 +1,12 @@
 "use client";
 import { useRef, useState } from "react";
 import Slider from "../../components/slider/slider";
+import { ColorRing } from 'react-loader-spinner'
 import axios from 'axios'
 import "./hero.css";
 const Hero = () => {
     const [openSideBar, setOpenSideBar] = useState(10);
+    const [loading, setLoading] = useState(false)
     const [navHeight, setNavHeight] = useState("h-0");
     const home = useRef<HTMLInputElement>(null);
     const about = useRef<HTMLInputElement>(null);
@@ -60,17 +62,22 @@ const Hero = () => {
     };
     const handleEmailSubmit = async (e: any) => {
         e.preventDefault(); if (name && email && subject && message) {
+            setLoading(true)
             try {
+
                 const post = await axios.post("https://formspree.io/f/mwkdbwvw", {
                     name: name,
                     subject: subject,
                     message: message
                 })
+
                 if (post.status === 200) {
+                    setLoading(false)
                     alert("email sent")
                 }
 
             } catch (error) {
+                setLoading(false)
                 console.log(error)
             }
         }
@@ -316,8 +323,16 @@ const Hero = () => {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
-                            <button onClick={(e) => handleEmailSubmit(e)} className="button_input z-40 cursor-pointer">
-                                Send message
+                            <button disabled={loading ? true : false} onClick={(e) => handleEmailSubmit(e)} className="button_input z-40 cursor-pointer">
+                                {loading ? <ColorRing
+                                    visible={true}
+                                    height="50"
+                                    width="50"
+                                    ariaLabel="blocks-loading"
+                                    wrapperStyle={{}}
+                                    wrapperClass="blocks-wrapper"
+                                    colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+                                /> : "Send message"}
                             </button>
                         </form>
                         <div className="absolute top-60">
