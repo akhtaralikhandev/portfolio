@@ -408,3 +408,11 @@ body {
     width: 250px;
   }
 }
+.contact_me_icons {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  /* font-weight: 00; */
+  line-height: 143.203%; /* 34.369px */
+}
