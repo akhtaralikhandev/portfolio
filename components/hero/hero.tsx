@@ -61,10 +61,10 @@ const Hero = () => {
         }
     };
     const handleEmailSubmit = async (e: any) => {
-        e.preventDefault(); if (name && email && subject && message) {
+        e.preventDefault();
+        if (name && email && subject && message) {
             setLoading(true)
             try {
-
                 const post = await axios.post("https://formspree.io/f/mwkdbwvw", {
                     name: name,
                     subject: subject,
@@ -80,6 +80,9 @@ const Hero = () => {
                 setLoading(false)
                 console.log(error)
             }
+        }
+        else {
+            alert("plz fill all the inputs")
         }
     }
     return (
