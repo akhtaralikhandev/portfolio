@@ -274,7 +274,7 @@ const Hero = () => {
                 </div>
             </div>
             <div ref={contact} className="contact_me">
-                <div className="contact_me_wrapper md:flex-row flex-col flex gap-4 md:pl-28 md:pr-28 md:p-12">
+                <div className="contact_me_wrapper md:flex-row flex-col flex pl-1 pr-1  gap-4 md:pl-28 md:pr-28 md:p-12">
                     <div className="leftContact flex-1 flex flex-col gap-14 md:p-0 p-8">
                         <div className="flex flex-col gap-6 ">
                             <span className="get_in_touch_span">Get in touch</span>

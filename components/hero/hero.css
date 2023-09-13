@@ -394,7 +394,7 @@ body {
   }
   .contact_me {
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 10px;
     padding-top: 10px;
   }
   .my_recent_work_wrapper {
@@ -405,7 +405,7 @@ body {
     padding-right: 10px; */
   }
   .my_recent_work {
-    margin-top: 60vh;
+    margin-top: 20vh;
   }
   .heroSection {
     height: 600px;
