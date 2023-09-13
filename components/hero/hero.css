@@ -383,12 +383,12 @@ body {
   }
   .illustration {
     position: absolute;
-    top: 160vh;
+    top: 110vh;
     left: 50vw;
   }
   .big_small_circle {
     position: absolute;
-    top: 140vh;
+    top: 100vh;
     left: 10px;
     /* left: 0; */
   }
@@ -396,6 +396,7 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
+    margin-top: 10vh;
   }
   .my_recent_work_wrapper {
     /* padding-top: 60vh; */
@@ -405,7 +406,7 @@ body {
     padding-right: 10px; */
   }
   .my_recent_work {
-    margin-top: 20vh;
+    /* margin-top: 40vh; */
   }
   .heroSection {
     height: 600px;
