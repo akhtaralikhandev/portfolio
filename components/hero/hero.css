@@ -388,7 +388,7 @@ body {
   }
   .big_small_circle {
     position: absolute;
-    top: 100vh;
+    top: 120vh;
     left: 10px;
     /* left: 0; */
   }
