@@ -225,8 +225,11 @@ body {
   font-weight: 700;
   line-height: 130%; /* 39px */
 }
+.my_recent_work {
+  margin-top: 80vh;
+}
 .my_recent_work_wrapper {
-  padding-top: 80vh;
+  /* padding-top: 80vh; */
   padding-left: 20vw;
   padding-right: 20vw;
 }
@@ -396,6 +399,13 @@ body {
   }
   .my_recent_work_wrapper {
     padding-top: 60vh;
+    padding-left: 2px;
+    padding-right: 2px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+  }
+  .my_recent_work {
+    margin-top: 60vh;
   }
   .heroSection {
     height: 600px;

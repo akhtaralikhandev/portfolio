@@ -33,22 +33,22 @@ const Hero = () => {
             setNavHeight("h-48");
         }
     };
-    const handleClick = () => {
+    const handleclickWork = () => {
         if (work.current !== null) {
             work.current.scrollIntoView({ behavior: "smooth" });
         }
     };
-    const handleClick2 = () => {
+    const handleClickHome = () => {
         if (home.current !== null) {
             home.current.scrollIntoView({ behavior: "smooth" });
         }
     };
-    const handleClick3 = () => {
+    const handleClickAbout = () => {
         if (about.current !== null) {
             about.current.scrollIntoView({ behavior: "smooth" });
         }
     };
-    const handleClick4 = () => {
+    const handleClickContact = () => {
         if (contact.current !== null) {
             contact.current.scrollIntoView({ behavior: "smooth" });
         }
@@ -114,14 +114,14 @@ const Hero = () => {
                             <ul
                                 className={`navbar_list w-full overflow-hidden lg:h-12 ${navHeight} lg:mt-0 mt-14 lg:flex  flex lg:flex-row  gap-4 flex-col items-end lg:items-center lg:justify-between`}
                             >
-                                <li onClick={() => handleClick2()}>Home</li>
-                                <li onClick={() => handleClick3()}>About me</li>
-                                <li className="lg:block hidden" onClick={() => handleClick2()}>
+                                <li onClick={() => handleClickHome()}>Home</li>
+                                <li onClick={() => handleClickAbout()}>About me</li>
+                                <li className="lg:block hidden" onClick={() => handleClickHome()}>
                                     {" "}
                                     <img src="/images/navbar/Logo name.png" alt="" />
                                 </li>
-                                <li onClick={() => handleClick()}>Work</li>
-                                <li onClick={() => handleClick4()}>Contact</li>
+                                <li onClick={() => handleclickWork()}>Work</li>
+                                <li onClick={() => handleClickContact()}>Contact</li>
                             </ul>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ const Hero = () => {
                                 </li>
                                 <li
                                     onClick={() => {
-                                        handleClick2()
+                                        handleClickHome()
                                     }}
                                     className="cursor-pointer"
                                 >
@@ -204,13 +204,13 @@ const Hero = () => {
                                         alt=""
                                     />
                                 </li>
-                                <li onClick={() => handleClick3()} className=" cursor-pointer">
+                                <li onClick={() => handleClickAbout()} className=" cursor-pointer">
                                     <img src="/images/sidebar/person_outline.png" alt="" />
                                 </li>
-                                <li onClick={() => handleClick()} className=" cursor-pointer">
+                                <li onClick={() => handleclickWork()} className=" cursor-pointer">
                                     <img src="/images/sidebar/work.png" alt="" />
                                 </li>
-                                <li onClick={() => handleClick4()} className=" cursor-pointer">
+                                <li onClick={() => handleClickContact()} className=" cursor-pointer">
                                     <img src="/images/sidebar/Phone_fill.png" alt="" />
                                 </li>
                                 <li className=" cursor-pointer">
@@ -349,7 +349,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* footer */}
-            <div className="footer  z-70  mt-40">
+            <div className="footer    mt-40">
                 <div className="footerWrapper relative flex flex-col md:p-14 p-8 items-center md:gap-12 gap-6 justify-center ">
                     <img
                         className="absolute md:block hidden  left-32  top-0 h-32"
@@ -357,16 +357,16 @@ const Hero = () => {
                         alt=""
                     />
                     <ul className="flex  md:pl-32 md:pr-32 pl-0 pr-0 md:flex-nowrap flex-wrap  items-center justify-between md:gap-24 gap-4">
-                        <li className="flex items-center gap-2 md:text-xl text-sm">
+                        <li onClick={() => handleClickHome()} className="flex items-center gap-2 md:text-xl text-sm">
                             <img src="/images/footer/home.png" alt="" /> Home
                         </li>
-                        <li className="flex items-center gap-2 md:text-xl text-sm">
+                        <li onClick={() => handleClickAbout()} className="flex items-center gap-2 md:text-xl text-sm">
                             <img src="/images/footer/person_outline.png" alt="" /> About me
                         </li>
-                        <li className="flex items-center gap-2 md:text-xl text-sm">
-                            <img src="/images/footer/work.png" alt="" /> work.png
+                        <li onClick={() => handleclickWork()} className="flex items-center gap-2 md:text-xl text-sm">
+                            <img src="/images/footer/work.png" alt="" /> work
                         </li>
-                        <li className="flex items-center gap-2 md:text-xl text-sm">
+                        <li onClick={() => handleClickContact()} className="flex items-center gap-2 md:text-xl text-sm">
                             <img src="/images/footer/Phone_fill.png" alt="" /> Contact
                         </li>
                     </ul>
