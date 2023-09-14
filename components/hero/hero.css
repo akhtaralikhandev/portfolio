@@ -393,10 +393,11 @@ body {
     position: absolute;
     top: 110vh;
     left: 50vw;
+    display: none;
   }
   .big_small_circle {
     position: absolute;
-    top: 140vh;
+    top: 130vh;
     left: 10px;
     /* left: 0; */
   }
