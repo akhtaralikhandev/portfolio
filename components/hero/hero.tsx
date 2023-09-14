@@ -222,16 +222,16 @@ const Hero = () => {
                 </div>
             </div>
             <div ref={about} className="aboutMe bg-white md:mt-48 mt-4">
-                <div className="aboutMeWrapper">
-                    <div className="aboutMeCircle relative rounded-full overflow-hidden">
-                        <div className="absolute md:block hidden left-0 top-32">
+                <div className="aboutMeWrapper flex items-center justify-center">
+                    <div className="aboutMeCircle flex items-center justify-center relative rounded-full overflow-hidden">
+                        {/* <div className="absolute hidden left-0 top-32">
                             <img
                                 className="h-80 "
                                 src="/images/about_me/about_me.png"
                                 alt=""
                             />
-                        </div>
-                        <div className="aboutMeCircleWords flex pl-8 flex-col gap-2  md:pl-80 md:pr-2">
+                        </div> */}
+                        <div className="aboutMeCircleWords flex pl-8 flex-col gap-2  md:pl-8 md:pr-2">
                             <span className="aboutMeSpan md:text-xl text-lg">About me</span>
                             <div className="flex flex-col my_name_is md:text-lg text-sm">
                                 <span>My name is Akhtar ali khan.</span>

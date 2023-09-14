@@ -76,6 +76,15 @@ export default function App() {
                     </div>
 
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div >
+                        <a href="https://youtube-clone-k4r0id5np-hammadkhanwazir.vercel.app/" className="flex flex-col gap-0" target="_blank">
+                            <img src="/images/works/youtube_image.webp" />
+                            <span className="swiper_title text-center pt-8 w-full">Youtube clone</span>
+                        </a>
+                    </div>
+
+                </SwiperSlide>
             </Swiper>
         </>
     );
