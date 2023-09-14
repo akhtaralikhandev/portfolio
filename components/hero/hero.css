@@ -225,6 +225,14 @@ body {
   font-weight: 700;
   line-height: 130%; /* 39px */
 }
+.my_recent_work_click {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 39px */
+}
 .my_recent_work {
   margin-top: 80vh;
 }

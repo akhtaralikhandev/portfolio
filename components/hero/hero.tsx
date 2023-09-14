@@ -259,7 +259,11 @@ const Hero = () => {
             </div>
             <div ref={work} className="my_recent_work relative">
                 <div className="my_recent_work_wrapper  flex flex-col items-center justify-center">
-                    <span className="my_recent_work_span">My recent work</span>
+                    <div className="flex items-center justify-center flex-col gap-2">
+
+                        <span className="my_recent_work_span">My recent work</span>
+                        <div className="my_recent_work_click">click on the images for projects</div>
+                    </div>
                     <Slider />
                     <img
                         className="absolute small_big_circle"
