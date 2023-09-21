@@ -151,7 +151,7 @@ const Hero = () => {
                                     <span>developer Akhtar Ali khan</span>
                                     <span>Based in Pakistan</span>
                                 </div>
-                                <div className="hero_section_button z-20 flex items-center gap-8">
+                                <div className="hero_section_button  flex items-center gap-8">
                                     <a
                                         href="https://www.fiverr.com/ptiinsafstudent/create-custom-web-apps-react-nextjs-nodejs-typescript"
                                         target="_blank"
@@ -173,7 +173,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="sidebar  overflow-hidden  ">
+                    <div className="sidebar relative z-50 overflow-hidden  ">
                         <div
                             style={{ width: openSideBar }}
                             className={`sidebar_wrapper    z-50  fixed top-24`}
@@ -257,7 +257,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div ref={work} className="my_recent_work relative">
+            <div ref={work} className="my_recent_work z-10 relative">
                 <div className="my_recent_work_wrapper  flex flex-col items-center justify-center">
                     <div className="flex items-center justify-center flex-col gap-2">
 

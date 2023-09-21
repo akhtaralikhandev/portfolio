@@ -19,6 +19,7 @@ export default function App() {
                 grabCursor={true}
                 centeredSlides={true}
                 slidesPerView={"auto"}
+
                 coverflowEffect={{
                     rotate: 50,
                     stretch: 0,
@@ -34,8 +35,8 @@ export default function App() {
                 modules={[EffectCoverflow, Pagination, Autoplay]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <div >
+                <SwiperSlide className="z-0">
+                    <div className="z-0" >
                         <a
                             href="https://amazona-joxp3phz8-hammadkhanwazir.vercel.app/"
                             target="_blank"
