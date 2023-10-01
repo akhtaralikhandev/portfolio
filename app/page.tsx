@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 export default function Home() {
   return (
     <div>
-      <Suspense fallback={"loading"}>
+      <Suspense fallback={<p>loading... </p>}>
 
 
         <Hero /></Suspense>
