@@ -146,23 +146,24 @@ const Hero = () => {
                                 />
                             </div>
                             <div className="  flex items-center flex-col gap-14 justify-start md:pl-48 md:pt-28 ">
-                                <div className="creativeWrapper lg:text-6xl md:text-4xl text-xl creative flex flex-col z-30">
+                                <div className="creativeWrapper lg:text-6xl md:text-4xl text-xl creative flex flex-col z-0">
                                     <span>Creative UI & Full Stack</span>
                                     <span>developer Akhtar Ali khan</span>
                                     <span>Based in Pakistan</span>
                                 </div>
                                 <div className="hero_section_button  flex items-center gap-8">
                                     <a
-                                        href="https://www.fiverr.com/ptiinsafstudent/create-custom-web-apps-react-nextjs-nodejs-typescript"
+                                        className="z-50"
+                                        href="https://www.fiverr.com/s/PvqxQP"
                                         target="_blank"
                                     >
-                                        <button className="hire_me md:pl-16 pl-5 pr-5 p-2 md:p-3 md:pr-16">
+                                        <button className="hire_me  md:pl-16 pl-5 pr-5 p-2 md:p-3 md:pr-16">
                                             Hire me
                                         </button>
                                     </a>
                                     <button
                                         onClick={() => downloadCV()}
-                                        className="download_cv md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10"
+                                        className="download_cv z-50 md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10"
                                     >
                                         Download CV
                                     </button>
