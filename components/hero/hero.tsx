@@ -4,6 +4,7 @@ import Slider from "../../components/slider/slider";
 import { ColorRing } from 'react-loader-spinner'
 import axios from 'axios'
 import "./hero.css";
+import Testimonials from "../testimonial/testimonial";
 const Hero = () => {
     const [openSideBar, setOpenSideBar] = useState(10);
     const [loading, setLoading] = useState(false)
@@ -12,6 +13,7 @@ const Hero = () => {
     const about = useRef<HTMLInputElement>(null);
     const work = useRef<HTMLInputElement>(null);
     const contact = useRef<HTMLInputElement>(null);
+    const testimonial = useRef<HTMLInputElement>(null);
     const footer = useRef<HTMLInputElement>(null);
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -51,6 +53,11 @@ const Hero = () => {
     const handleClickContact = () => {
         if (contact.current !== null) {
             contact.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+    const handleClickTestimonial = () => {
+        if (testimonial.current !== null) {
+            testimonial.current.scrollIntoView({ behavior: "smooth" });
         }
     };
     const toggleSidebar = () => {
@@ -117,11 +124,14 @@ const Hero = () => {
                                 <li onClick={() => handleClickHome()}>Home</li>
                                 <li onClick={() => handleClickAbout()}>About me</li>
                                 <li className="lg:block hidden" onClick={() => handleClickHome()}>
-                                    {" "}
+
                                     <img src="/images/navbar/Logo name.png" alt="" />
                                 </li>
                                 <li onClick={() => handleclickWork()}>Work</li>
+                                <li onClick={() => handleClickTestimonial()}>Testimonials</li>
+
                                 <li onClick={() => handleClickContact()}>Contact</li>
+
                             </ul>
                         </div>
                     </div>
@@ -174,7 +184,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="sidebar relative z-50 overflow-hidden  ">
+                    {/* <div className="sidebar relative z-50 overflow-hidden  ">
                         <div
                             style={{ width: openSideBar }}
                             className={`sidebar_wrapper    z-50  fixed top-24`}
@@ -219,7 +229,7 @@ const Hero = () => {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div ref={about} className="aboutMe bg-white md:mt-48 mt-4">
@@ -238,13 +248,10 @@ const Hero = () => {
                                 <span>My name is Akhtar ali khan.</span>
                                 <span>{"I'm a web developer"}</span>
                                 <span>{" based in Pakistan. I'm curently"}</span>
-                                <span>{"working with Next.js. I'm"}</span>
-                                <span>passionate about creating digital</span>
-                                <span>experiences and teaching design.</span>
-                                <span>My goal is to help beginners to</span>
-                                <span>
-                                    grow their skills
-                                </span>
+                                <span>{"working as Fiverr Freelancer"}</span>
+                                <span>For Development I use Next js , React js </span>
+                                <span> typescript tailwind css , MUI SASS , </span>
+                                <span>I also understand and had worked on Node.js</span>
                             </div>
                         </div>
                     </div>
@@ -274,6 +281,26 @@ const Hero = () => {
                         src="/images/works/BG Small Circle.png"
                         alt=""
                     />
+                </div>
+            </div>
+            <div ref={testimonial} className="my_recent_work z-10 relative">
+                <div className="my_recent_work_wrapper  flex flex-col items-center justify-center">
+                    <div className="flex items-center justify-center flex-col gap-2">
+
+                        <span className="my_recent_work_span">Testimonials</span>
+                        <div className="my_recent_work_click">click on the review for detail</div>
+                    </div>
+                    <Testimonials />
+                    {/* <img
+                        className="absolute small_big_circle"
+                        src="/images/works/BG Small Circle.png"
+                        alt=""
+                    />
+                    <img
+                        className="absolute small_big_circle1"
+                        src="/images/works/BG Small Circle.png"
+                        alt=""
+                    /> */}
                 </div>
             </div>
             <div ref={contact} className="contact_me">
