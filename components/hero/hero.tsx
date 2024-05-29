@@ -161,12 +161,12 @@ const Hero = () => {
                                             Hire me
                                         </button>
                                     </a>
-                                    <button
+                                    {/* <button
                                         onClick={() => downloadCV()}
                                         className="download_cv z-50 md:pl-10 pl-5 pr-5 p-2 md:p-3 md:pr-10"
                                     >
                                         Download CV
-                                    </button>
+                                    </button> */}
                                 </div>
                                 <div className="solarHero absolute top-14 right-0">
                                     <img src="/images/hero/Group 1190.png" alt="" />
@@ -243,9 +243,7 @@ const Hero = () => {
                                 <span>experiences and teaching design.</span>
                                 <span>My goal is to help beginners to</span>
                                 <span>
-                                    {" "}
-                                    grow their skills{" "}
-                                    <span className="read_more cursor-pointer">...read more</span>
+                                    grow their skills
                                 </span>
                             </div>
                         </div>
@@ -298,7 +296,7 @@ const Hero = () => {
                                 </span>
                                 <span>+92 3059663565</span>
                             </div>
-                            <span>akhtaralikhandeveloper@gmail.com</span>
+                            <span>akhtaralikhanwazir010@gmail.com</span>
                         </div>
                     </div>
                     <div className="rightContact relative flex-1 md:p-0 p-8">
@@ -396,11 +394,13 @@ const Hero = () => {
                             />
                         </li>
                         <li>
-                            <img
-                                className="ul_li_social"
-                                src="/images/footer/Linkedin.png"
-                                alt=""
-                            />
+                            <a href="https://www.linkedin.com/in/akhtar-ali-02a690294/" target="_blank">
+                                <img
+                                    className="ul_li_social"
+                                    src="/images/footer/Linkedin.png"
+                                    alt=""
+                                />
+                            </a>
                         </li>
                         <li>
                             <a
